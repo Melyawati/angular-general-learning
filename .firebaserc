@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "heroes-project-644b4": {
+      "hosting": {
+        "angular-tour-of-heroes": [
+          "heroes-project-644b4"
+        ]
+      }
+    }
+  }
+}
