@@ -16,6 +16,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { KanbanFireComponent } from './kanban-fire/kanban-fire.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { TaskComponent } from './kanban-fire/task/task.component';
+import { MatCardModule } from '@angular/material/card';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TaskDialogComponent } from './kanban-fire/task-dialog/task-dialog.component';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -24,13 +35,23 @@ import { environment } from 'src/environments/environment';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    KanbanFireComponent,
+    TaskComponent,
+    TaskDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    DragDropModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatInputModule,
 
   // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
   // and returns simulated server responses.
